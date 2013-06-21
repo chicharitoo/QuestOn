@@ -316,6 +316,7 @@ public void viewLista(){
 			
 			startActivity(i);
 			
+			
          }
      });
 }
