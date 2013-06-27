@@ -158,7 +158,7 @@ public class MainActivity extends Activity {
         case 4:
           	 localizacion.setText("Caffenio");
           	  local = "Caffenio";
- 	 tasks.clear();
+          	  tasks.clear();
            	 desc_tasks.clear();		        
            	 tasks.add("Vueltas a la pista");
    	         tasks.add("Carreras");
@@ -182,6 +182,7 @@ public class MainActivity extends Activity {
 		}
         Toast.makeText(getApplicationContext(), "Lat: "+latitude+"\nLon:"+longitude, Toast.LENGTH_SHORT).show();
         viewLista();
+        gps.stopSelf();
 	}
 	//FIN DE clickgps
 	
@@ -268,7 +269,7 @@ public class MainActivity extends Activity {
 	           }
 	         });
 	
-         alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+         alert.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
 	           @Override
 			public void onClick(DialogInterface dialog, int whichButton) {
 	             // Canceled.

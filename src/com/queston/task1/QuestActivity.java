@@ -3,6 +3,7 @@ package com.queston.task1;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class QuestActivity extends Activity{
@@ -36,7 +37,7 @@ public class QuestActivity extends Activity{
 	
 	
 
-	public void clickBack(){
+	public void clickBack(View v){
 		finish();
 	}
 	
