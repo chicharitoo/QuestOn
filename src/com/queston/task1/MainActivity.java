@@ -57,7 +57,8 @@ public class MainActivity extends Activity {
     ArrayList<String> tasks = new ArrayList<String>();
     ArrayList<String> desc_tasks = new ArrayList<String>();
     
-	
+    
+   
     
     // el onCreate hace el listview y pone el listener para cuando le demos el lugar nos
     //muestre las quests de ese lugar
@@ -65,6 +66,11 @@ public class MainActivity extends Activity {
 	    public void onCreate(Bundle saveInstanceState) {
 	          setContentView(R.layout.activity_main);
 	          super.onCreate(saveInstanceState);
+	          Intent i = getIntent();
+	          TextView t = (TextView) findViewById(R.id.txtLat);
+	          String usuario = i.getStringExtra("user");
+	          t.setText("Hola! "+usuario);
+	      	
 	          viewLista();
 	         
 	        //empieza listview 
@@ -255,8 +261,9 @@ public class MainActivity extends Activity {
 	//Este metodo es el del boton de cambiar de nombre... luego lo cambiaremos para que
 	//se conecte a la base de datos y todo eso...
 	public void cambianombre(View v){
-		 final TextView cNombre = (TextView) findViewById(R.id.txtLat);
-         final EditText input = new EditText(this);
+		 final TextView t = (TextView) findViewById(R.id.txtLat);
+		 
+         /*final EditText input = new EditText(this);
          AlertDialog.Builder alert = new AlertDialog.Builder(this);
          
          alert.setTitle("Cambia Nombre");
@@ -282,9 +289,21 @@ public class MainActivity extends Activity {
 		 alert.show();
 		 InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
 		 imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
+		*/
+		 Intent i = new Intent( MainActivity.this, Login.class );
+		 finish();
+         startActivity(i);
+		 
 		}
-	
-
+	/*
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if ( requestCode == REQUEST_TEXT ){
+             if ( resultCode == Activity.RESULT_OK ){
+                  t.setText(data.getExtras().get("text").toString());
+             }
+        }
+	}
+*/
 	
 	
 	
