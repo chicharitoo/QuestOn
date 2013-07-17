@@ -102,6 +102,8 @@ public class MainActivity extends Activity {
       	}
 		
 		
+		
+		
 		locacion(latitude,longitude);
 		
       	TextView localizacion = (TextView) findViewById(R.id.textView6);
@@ -253,7 +255,7 @@ public class MainActivity extends Activity {
 	//Este metodo es el del boton de cambiar de nombre... luego lo cambiaremos para que
 	//se conecte a la base de datos y todo eso...
 	public void cambianombre(View v){
-		 final TextView cNombre = (TextView) findViewById(R.id.txtLong);
+		 final TextView cNombre = (TextView) findViewById(R.id.txtLat);
          final EditText input = new EditText(this);
          AlertDialog.Builder alert = new AlertDialog.Builder(this);
          
@@ -265,7 +267,8 @@ public class MainActivity extends Activity {
 	         @Override
 			public void onClick(DialogInterface dialog, int whichButton) {
 	           Editable value = input.getText();
-	           cNombre.setText(value);
+	           cNombre.setText("Hola "+value);
+	           
 	           }
 	         });
 	
