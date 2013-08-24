@@ -54,7 +54,7 @@
         android:layout_alignLeft="@+id/txtLat"
         android:layout_below="@+id/txtLat"
         android:onClick="cambianombre"
-        android:text="Cambia Nombre" />
+        android:text="LogOut" />
 
     <Button
         android:id="@+id/button2"

@@ -33,8 +33,8 @@
         android:text="Password"
         android:textColor="#372c24"
         tools:ignore="HardcodedText" />
-
-    <EditText
+<!-- 
+   <EditText
         android:id="@+id/edpassword"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -43,6 +43,18 @@
         android:password="true"
         android:singleLine="true"
         tools:ignore="Deprecated" />
+ -->
+ 
+   <EditText
+        android:id="@+id/edpassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       
+        android:layout_marginTop="5dip"
+        android:inputType="text"
+        android:password="true"
+        android:singleLine="true" 
+         tools:ignore="Deprecated" />
 
     <!-- Login button -->
 

@@ -32,7 +32,7 @@ public class Login extends Activity {
     TextView registrar;
     Httppostaux post;
     // String URL_connect="http://www.scandroidtest.site90.com/acces.php";
-    String IP_Server="queston.nextlab.mx";//IP DE NUESTRO PC
+    String IP_Server="queston.web44.net";//IP DE NUESTRO PC
     String URL_connect="http://"+IP_Server+"/ws/access.php";//ruta en donde estan nuestros archivos
   
     boolean result_back;
@@ -93,7 +93,7 @@ public class Login extends Activity {
     public void err_login(){
     	Vibrator vibrator =(Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 	    vibrator.vibrate(200);
-	    Toast toast1 = Toast.makeText(getApplicationContext(),"Error:Nombre de usuario o password incorrectos", Toast.LENGTH_SHORT);
+	    Toast toast1 = Toast.makeText(getApplicationContext(),"Error: Nombre de usuario o password incorrectos", Toast.LENGTH_SHORT);
  	    toast1.show();    	
     }
     

@@ -69,7 +69,7 @@ public class MainActivity extends Activity {
 	          Intent i = getIntent();
 	          TextView t = (TextView) findViewById(R.id.txtLat);
 	          String usuario = i.getStringExtra("user");
-	          t.setText("Hola! "+usuario);
+	          t.setText("Hola  "+usuario+"!");
 	      	
 	          viewLista();
 	         
