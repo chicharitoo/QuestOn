@@ -27,12 +27,9 @@ public class QuestActivity extends Activity{
 		String titulo = i.getStringExtra("nomQuest");
 		String descripcion = i.getStringExtra("desQuest");
 		
-		String localizacion = i.getStringExtra("loca");
-		
 		txtNomQuest.setText(titulo);
 		txtDesQuest.setText(descripcion);
-		
-		txtLat.setText("Lugar: "+localizacion);
+
 	}
 	
 	

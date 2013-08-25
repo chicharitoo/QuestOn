@@ -188,6 +188,7 @@ public class Login extends Activity {
 			//obtnemos usr y pass
 			user=params[0];
 			pass=params[1];
+			
             
 			//enviamos y recibimos y analizamos los datos en segundo plano.
     		if (loginstatus(user,pass)==true){    		    		
