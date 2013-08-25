@@ -255,7 +255,7 @@ public void crearQuest(){
 					
 					
 					json_data = jdata.getJSONObject(0); //leemos el primer segmento en nuestro caso el unico
-					 logstatus=json_data.getInt("logstatus");//accedemos al valor 
+					logstatus=json_data.getInt("logstatus");//accedemos al valor 
 
 
 				} catch (JSONException e) {
